@@ -1,0 +1,37 @@
+print("Welcome to the airport of the Adventure. Are you ready to fly?")
+print('''
+                        --====|====--
+                              |  
+
+                          .-"""""-. 
+                        .'_________'. 
+                       /_/_|__|__|_\_\
+                      ;'-._       _.-';
+ ,--------------------|    `-. .-'    |--------------------,
+  ``""--..__    ___   ;       '       ;   ___    __..--""``
+            `"-// \\.._\             /_..// \\-"`
+               \\_//    '._       _.'    \\_//
+                `"`        ``---``        `"`
+''')
+print("You were waiting in the airport for your flight. You saw a woman with a baby in her hand in a hurry. She was trying to book a place in your flight. But the flight is full. You have two options. You can either wait for the next flight or you can ignore. Type 'wait' for next flight and give your place to the woman or 'ignore' to ignore the woman and fly with that plane.")
+choice1 = input().lower()
+if choice1 == "wait":
+  print("You waited for the next flight. When waiting for next flight, do you want to go to cafe or bookshop. Type 'cafe' or 'bookshop'")
+  choice2 = input().lower()
+  if choice2 == "cafe":
+      print("You went to the cafe. You sat a chair and wait for your coffee when scrolling on your phone. Then an inexperienced waiter spilled the coffee on you and your phone. After getting over your shock, you looked at your phone and it was not working. You got angry. Type 'scream' to scream to the waiter or 'calm' to be met the situation calmly and smile at the waiter")
+      choice3 = input().lower()
+      if choice3 == "scream":
+        print("You scream at the waiter. The waiter was not happy with your screaming. He called the manager. You got kicked out of the airport because of your rudeness. Game over.")
+      else:
+        print("You calmly smile at the waiter. He was thankful for your calmness. He gave you a free coffee. You got on the plane at your time and fly safely to the destion. You win!")
+  else:
+    print("You went to the bookshop. You saw some teenagers tearing the pages of the books. Type 'warn' to warn them kindly or 'ignore' to behave like you saw nothing")
+    choice4 = input().lower()
+    if choice4 == "warn":
+      print("You warned the teenagers. They run away from the shop. The owner of the bookshop saw the situation and thanked you for your kindness. He offer to give your wished book for free. You got on the plane at your time and fly safely to the destion. You win!")
+    else:
+      print("You ignored the teenagers. Then the owner of the bookshop came and the teenagers blame you for the sitution. He called the cops and you got kicked out of the airport. Game over.")
+else:
+  print("You ignored the woman. You got on the plane. After a while the pilot has announced that the plane is running low on fuel. The plane got crashed. Game over.")
+        
